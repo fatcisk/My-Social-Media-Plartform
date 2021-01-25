@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 * {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -13,11 +15,45 @@ body {
     margin: 0;
     background-color: #E9E9E9;
     height: 100vh;
+    font-family: Roboto;
     
 }
 
-.feed {
+.follower-count {
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+}
 
+.pp {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.post-h {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 1px;
+}
+
+.username {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.verified {
+    width: 12px;
+    margin-left: 4px;
+}
+
+.article-img {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .nav-desk {
@@ -42,11 +78,52 @@ body {
     color: red;
 }
 
+.btn-yes, .btn-idk, .btn-no {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 80px;
+    height: 35px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 35px;
+    border: none;
+    transition: 0.1s;
+}
+
+.btn-yes:focus, .btn-idk:focus, .btn-no:focus {
+    outline: none;
+}
+
+.btn-yes:active, .btn-idk:active, .btn-no:active {
+    transform: translateY(5px);
+}
+
+.btn-yes {
+    background: #00F235;
+}
+
+.btn-idk {
+    background: #C4C4C4;
+}
+
+.btn-no {
+    background: #FF0000;
+}
+
+p {
+    font-size: 20px;
+    margin: 0 20px 20px 20px;
+}
+
 .post {
     margin: 8px auto;
     width: 720px;
-    height: 286px;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -73,7 +150,8 @@ body {
 
 @media all and (max-width: 560px){ 
 
-    h1 {
+    .logo-letter {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 0;
         margin: 0;
     }
@@ -83,15 +161,16 @@ body {
         top: 0;
         left: 0;
         z-index: 5;
-        border-bottom: 1px solid black;
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: white;
         width: 100%;
+        height: 50px;
     }
 
     .post {
-        top: 12px;
+        top: 50px;
     }
 
     .nav-desk {
@@ -100,7 +179,7 @@ body {
 
     .material-icons {
         margin: 0 10px;
-        font-size: 30px !important;
+        font-size: 35px !important;
     }
 
     .nav-bottom {
@@ -114,12 +193,6 @@ body {
         align-items: center;
         background-color: white;
         width: 100%;
-    }
-}
-
-@media all and (max-width: 320px) {
-    .material-icons {
-        margin: 0 10px;
-        font-size: 20px !important;
+        height: 40px;
     }
 }
