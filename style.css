@@ -1,0 +1,125 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #E9E9E9;
+    height: 100vh;
+    
+}
+
+.feed {
+
+}
+
+.nav-desk {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+
+.material-icons {
+    color: black;
+    margin: 0 50px;
+    font-size: 50px !important;
+}
+
+.material-icons:hover {
+    color: red;
+}
+
+.post {
+    margin: 8px auto;
+    width: 720px;
+    height: 286px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 66px;
+}
+
+.nav-bottom {
+    display: none;
+}
+
+.logo {
+    display: none;
+}
+
+@media all and (max-width: 720px){ 
+    .material-icons {
+        margin: 0 40px;
+    }
+
+    .post {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 560px){ 
+
+    h1 {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+    }
+
+    .post {
+        top: 12px;
+    }
+
+    .nav-desk {
+        display: none;
+    }
+
+    .material-icons {
+        margin: 0 10px;
+        font-size: 30px !important;
+    }
+
+    .nav-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .material-icons {
+        margin: 0 10px;
+        font-size: 20px !important;
+    }
+}
