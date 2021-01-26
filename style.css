@@ -33,11 +33,39 @@ body {
     transition: 0.1s;
 }
 
-.post-h {
+.profile-info {
     display: flex;
     align-items: center;
-    margin: 20px;
+}
+
+.post-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
     margin-bottom: 1px;
+}
+
+.post-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 15px 15px 0;
+}
+
+.item-ar {
+    width: 25px;
+    height: 18px;
+}
+
+.comments-cont {
+    display: flex;
+    align-items: center;
 }
 
 .username {
@@ -69,18 +97,53 @@ body {
     width: 100%;
 }
 
-.material-icons {
+.nav-buttons {
     color: black;
     margin: 0 50px;
     font-size: 50px !important;
 }
 
-.material-icons:hover {
+.nav-buttons:hover {
     color: red;
 }
 
+
 .pp:hover {
     transform: scale(2);
+}
+
+.fill, .empty {
+    margin: 0 0 20px 20px;
+    font-size: 60px !important;
+    transition: 0.1s;
+    transform: scale(1.2, 1);
+}
+
+.date-cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 5px 5px 5px 5px;
+}
+
+.fill {
+    color: rgb(0, 163, 0);
+}
+
+.empty {
+    color: red;
+}
+
+.fill:active {
+    transform: translateY(-10px);
+}
+
+.empty:active {
+    transform: translateY(10px);
 }
 
 .btn-yes, .btn-idk, .btn-no {
@@ -121,19 +184,18 @@ body {
 
 p {
     font-size: 20px;
-    margin: 0 20px 20px 20px;
-    line-height: 20px;
+    margin: 0 5px 15px 15px;
+    line-height: 25px;
 }
 
 .post {
     margin: 8px auto;
     width: 720px;
-    height: auto;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
-    top: 66px;
+    top: 50px;
 }
 
 .nav-bottom {
@@ -145,8 +207,10 @@ p {
 }
 
 @media all and (max-width: 720px){ 
-    .material-icons {
-        margin: 0 40px;
+
+    p {
+        font-size: 18px;
+        line-height: 23px;
     }
 
     .post {
@@ -156,6 +220,12 @@ p {
 
 @media all and (max-width: 560px){ 
 
+    .nav-buttons {
+        color: black;
+        margin: 0 20px;
+        font-size: 40px !important;
+    }
+
     .logo-letter {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 0;
@@ -164,6 +234,7 @@ p {
 
     p {
         font-size: 15px;
+        line-height: 20px;
     }
     
     .logo {
@@ -185,11 +256,6 @@ p {
 
     .nav-desk {
         display: none;
-    }
-
-    .material-icons {
-        margin: 0 10px;
-        font-size: 35px !important;
     }
 
     .nav-bottom {
